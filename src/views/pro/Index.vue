@@ -1,29 +1,28 @@
+<!-- eslint-disable -->
+
 <script>
-  // Extensions
-  import View from '@/views/View'
+/* eslint-disable */
 
-  // Mixins
-  import LoadSections from '@/mixins/load-sections'
+// Extensions
+import View from "@/views/View";
 
-  export default {
-    name: 'Pro',
+// Mixins
+import LoadSections from "@/mixins/load-sections";
 
-    metaInfo: { title: 'Pro Features' },
+export default {
+  name: "our customers",
 
-    extends: View,
+  metaInfo: { title: "Pro Features" },
 
-    mixins: [
-      LoadSections([
-        'hero-alt',
-        'pro-features',
-      ]),
-    ],
+  extends: View,
 
-    props: {
-      id: {
-        type: String,
-        default: 'pro',
-      },
-    },
+  mixins: [LoadSections(["hero-alt", "pro-features"])],
+
+  props: {
+    id: {
+      type: String,
+      default: "our customers"
+    }
   }
+};
 </script>

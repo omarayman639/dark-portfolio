@@ -20,9 +20,8 @@ export default {
     LoadSections([
       "hero",
       "theme-features",
-      "features",
-      "affiliates",
       "social-media",
+      "affiliates",
       "info"
     ])
   ],

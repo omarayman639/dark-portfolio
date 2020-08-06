@@ -1,10 +1,8 @@
+<!-- eslint-disable -->
 <template>
   <v-theme-provider :dark="dark">
     <div>
-      <base-info-card
-        :title="title"
-        color="primary"
-      >
+      <base-info-card :title="title" color="primary">
         <slot />
       </base-info-card>
 
@@ -23,44 +21,42 @@
           <div v-html="text" />
         </base-avatar-card>
 
-        <v-divider
-          v-if="i + 1 !== business.length"
-          :key="`divider-${i}`"
-          class="my-2"
-        />
+        <v-divider v-if="i + 1 !== business.length" :key="`divider-${i}`" class="my-2" />
       </template>
     </div>
   </v-theme-provider>
 </template>
 
 <script>
-  export default {
-    name: 'BaseBusinessContact',
+/* eslint-disable */
 
-    props: {
-      dark: Boolean,
-      dense: Boolean,
-      title: String,
-    },
+export default {
+  name: "BaseBusinessContact",
 
-    data: () => ({
-      business: [
-        {
-          icon: 'mdi-map-marker-outline',
-          title: 'Address',
-          text: '8553 N. Beach St. Ste. 227<br>Fort Worth, Texas 76137',
-        },
-        {
-          icon: 'mdi-cellphone',
-          title: 'Phone',
-          text: '01 (800) 433 744<br>01 (800) 433 633',
-        },
-        {
-          icon: 'mdi-email',
-          title: 'Email',
-          text: 'john@vuetifyjs.com<br>heather@vuetifyjs.com',
-        },
-      ],
-    }),
-  }
+  props: {
+    dark: Boolean,
+    dense: Boolean,
+    title: String
+  },
+
+  data: () => ({
+    business: [
+      {
+        icon: "mdi-map-marker-outline",
+        title: "Address",
+        text: "9999 N. Beach St. Ste. 9999<br>Fort Worth, Texas 978903"
+      },
+      {
+        icon: "mdi-cellphone",
+        title: "Phone",
+        text: "011 54 378 588<br>011 29 805 828"
+      },
+      {
+        icon: "mdi-email",
+        title: "Email",
+        text: "miroayman639@gmail.com<br>mada61988@gmail.com"
+      }
+    ]
+  })
+};
 </script>

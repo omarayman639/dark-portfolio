@@ -1,36 +1,50 @@
 <!-- eslint-disable -->
 <template>
   <div>
-    <v-app-bar id="home-app-bar" elevation="1" height="80">
+    <v-app-bar
+      src="../../assets/toolbar-black-wood.png"
+      id="home-app-bar"
+      elevation="1"
+      height="80"
+    >
       <base-img
-        :src="require('@/assets/zero-logo-light.svg')"
+        :src="require('@/assets/dark-logo-final.png')"
         contain
-        max-width="128"
+        max-width="250"
         width="100%"
       />
 
       <v-spacer />
 
-      <div>
-        <v-tabs class="hidden-sm-and-down" optional>
+      <div class="hidden-sm-and-down">
+        <!-- <v-tabs class="hidden-sm-and-down" optional>
           <v-tab
             v-for="(name, i) in items"
             :key="i"
             :to="{ name }"
             :exact="name === 'Home'"
             :ripple="false"
-            class="font-weight-bold grey lighten-4"
+            class="font-weight-bold"
             active-class="text--primary"
             min-width="96"
-            text
           >{{ name }}</v-tab>
-        </v-tabs>
+        </v-tabs>-->
+
+        <v-btn
+          class="grey--text text--lighten-1"
+          text
+          v-for="(name, i) in items"
+          :key="i"
+          :ripple="false"
+          active-class="grey--text"
+          :exact="name === 'Home'"
+        >{{name}}</v-btn>
       </div>
 
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer" />
+      <v-app-bar-nav-icon style="color: white" class="hidden-md-and-up" @click="drawer = !drawer" />
     </v-app-bar>
 
-    <home-drawer v-model="drawer" :items="items" />
+    <home-drawer dark v-model="drawer" :items="items" />
   </div>
 </template>  
  
@@ -50,7 +64,7 @@ export default {
   },
   data: () => ({
     drawer: null,
-    items: ["Home", "About", "Contact", "Pro"]
+    items: ["Home", "About", "Contact", "our customers"]
   })
 };
 </script>
@@ -65,3 +79,4 @@ export default {
       &::before
         display: none
 </style>
+

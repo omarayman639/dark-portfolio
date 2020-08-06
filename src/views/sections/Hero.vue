@@ -4,17 +4,18 @@
     <v-img
       :min-height="minHeight"
       :src="require('@/assets/home-hero.jpg')"
-      class="white--text"
       gradient="to right, rgba(5, 11, 31, .8), rgba(5, 11, 31, .8)"
     >
       <v-container class="fill-height px-4 py-12">
         <v-responsive class="d-flex align-center" height="100%" max-width="700" width="100%">
-          <base-heading title="PROMOTE YOUR BUSINESS WITH ZERO" />
+          <base-heading title="PROMOTE YOUR BUSINESS WITH DARK MEDIA" />
 
           <base-body>
             Infographic hypotheses influencer user experience Long madel ture gen-z paradigm shift client partner network product seilans solve management influencer analytics leverage virality.
             incubator seed round massmarket.
             buyer agile development growth hacking business-to-consumer ecosystem
+            Infographic hypotheses influencer user experience Long madel ture gen-z paradigm shift client partner network product seilans solve management influencer analytics leverage virality.
+            incubator seed round massmarket.
           </base-body>
 
           <div

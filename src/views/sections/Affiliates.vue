@@ -1,44 +1,31 @@
+ <!-- eslint-disable -->
 <template>
-  <base-section
-    id="affiliates"
-    class="grey lighten-4"
-    space="36"
-  >
+  <base-section id="affiliates" class="grey lighten-4" space="36">
     <v-container>
-      <base-section-heading title="Who's using Zero?" />
+      <base-section-heading title="Our Customers" />
 
-      <v-slide-group>
-        <template v-for="n in 6">
-          <v-slide-item
-            :key="n"
-            class="align-self-center"
-          >
-            <base-img
-              :src="require(`@/assets/logo-${n}.png`)"
-              color="grey"
-              contain
-              height="40"
-              width="128"
-            />
-          </v-slide-item>
+      <v-row justify="center">
+        <v-col v-for="n in 6" :key="n" cols="4" lg="2" sm="4" md="2">
+          <v-img
+            :src="require(`@/assets/logo-${n}.png`)"
+            color="grey"
+            contain
+            height="40"
+            width="200"
+          />
+        </v-col>
+      </v-row>
 
-          <v-responsive
-            v-if="n < 6"
-            :key="`divider-${n}`"
-            class="text-center"
-            height="56"
-            width="48"
-          >
-            <v-divider vertical />
-          </v-responsive>
-        </template>
-      </v-slide-group>
+      <v-responsive v-if="n < 6" :key="`divider-${n}`" class="text-center" height="56" width="48">
+        <v-divider vertical />
+      </v-responsive>
     </v-container>
   </base-section>
 </template>
 
 <script>
-  export default {
-    name: 'SectionAffiliates',
-  }
+/* eslint-disable */
+export default {
+  name: "SectionAffiliates"
+};
 </script>
