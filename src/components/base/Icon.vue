@@ -1,5 +1,6 @@
+<!-- eslint-disable -->
 <template>
-  <v-icon
+ <v-icon
     :size="size"
     v-bind="$attrs"
     v-on="$listeners"
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+/* eslint-disable */
   export default {
     name: 'BaseIcon',
 

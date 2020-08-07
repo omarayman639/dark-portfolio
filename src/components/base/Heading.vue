@@ -1,12 +1,14 @@
+<!-- eslint-disable -->
 <template>
   <component
     :is="tag"
     :class="classes"
     v-bind="$attrs"
     v-on="$listeners"
+
   >
-    <template v-if="title">
-      {{ title }}
+    <template v-if="title" class="white">
+     <span class="white--text"> {{ title }} </span>
     </template>
 
     <slot v-else />
@@ -14,6 +16,7 @@
 </template>
 
 <script>
+/* eslint-disable */
   export default {
     name: 'BaseHeading',
 

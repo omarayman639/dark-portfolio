@@ -1,6 +1,7 @@
 <!-- eslint-disable -->
 <template>
-  <base-section id="theme-features">
+
+  <base-section class="grey darken-4 text-center" id="theme-features">
     <base-section-heading
       title="What We Offer"
     >Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in! Asperiores, impedit libero. Veniam rerum saepe unde nihil possimus quibusdam esse accusamus mollitia magni fuga.</base-section-heading>
@@ -16,7 +17,18 @@
         </v-col>
       </v-row>
     </v-container>
+      <v-row justify="center" >
+      <v-col cols="9">
+         <v-divider
+        class="white mx-15"
+        :inset="inset"
+        horizontal
+      ></v-divider>
+      </v-col>
+      </v-row>
+
   </base-section>
+
 </template>
 
 <script>
@@ -54,3 +66,4 @@ export default {
   })
 };
 </script>
+

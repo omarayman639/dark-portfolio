@@ -1,7 +1,9 @@
-<template>
+<!-- eslint-disable -->
+<template >
   <base-section
     id="map"
     space="0"
+   
   >
     <iframe
       allowfullscreen
@@ -17,6 +19,7 @@
 </template>
 
 <script>
+/* eslint-disable */
   export default {
     name: 'SectionMap',
 

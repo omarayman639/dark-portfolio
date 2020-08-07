@@ -57,6 +57,16 @@
           </v-btn>
         </v-col>
       </v-row>
+      <v-row justify="center" >
+      <v-col cols="9">
+         <v-divider
+        class="white mx-15"
+        :inset="inset"
+        horizontal
+      ></v-divider>
+      </v-col>
+      </v-row>
+
     </base-section>
   </v-theme-provider>
 </template>
